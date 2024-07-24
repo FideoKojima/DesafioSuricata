@@ -1,52 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-body {
+:root {
+    --pink: #E83E8C;
+    --white: #fff;
+    --info: #17a2b8;
+  }
+  
+  body {
     font-family: 'Open Sans', sans-serif;
-}
-
-/* Navbar */
-.navbar-brand img {
-    width: 132px;
-}
-
-.navbar {
-    background: #E83E8C;
-}
-#navbarTogglerDemo02 {
-    background: #E83E8C;
-}
-
-
-/* Header */
-header h1 {
-    font-size: 60px;
-    color: #707070;
-}
-
-/* Cards */
-.card {
-    margin: 0 auto; /* Centra la tarjeta horizontalmente */
-    width: 18rem; /* O cualquier ancho que prefieras */
-}
-.card-body h5 {
-    font-weight: 700;
-} 
-
-/* Seccion formas de pago */
-.pago__container {
-    height: 170px;
-    background: #17A2B8;
-}
-.pago__container h3 {
-    font-size: 40px;
-    font-weight: 700;
-}
-.pago__container i {
-    font-size: 50px;
-}
-
-/* Footer */
-footer {
-    background: #E83E8C;
-    height: 184px;
-}
+    background-color: var(--pink);
+  }
+  
+  h2 {
+    font-size: 35px;
+  }
+  
+  .productos {
+    background-color: var(--white);
+    padding-bottom: 50px;
+  }
+  
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .list-group-item {
+    font-size: 10px;
+    font-weight: normal;
+  }
+  
+  .card-link {
+    font-size: 10px;
+    font-weight: normal;
+    color: #1C7CD5;
+  }
+  
+  .color-fondo {
+    background-color: var(--pink);
+  }
+  
+  nav {
+    color: var(--white);
+  }
+  .navbar{
+    background-color: var(--pink) !important;
+  }
+  @media (min-width: 700px) {
+    body {
+      background-color: var(--pink);
+    }
+  
+    .productos {
+      background-color: var(--white);
+      padding-bottom: 50px;
+    }
+  
+    h2 {
+      font-size: 60px;
+    }
+  
+    .icons-section h2 {
+      font-size: 40px;
+    }
+  
+    .card-title {
+      font-size: 17px;
+      font-weight: bold;
+    }
+  
+    .list-group-item {
+      font-size: 11px;
+      font-weight: normal;
+    }
+  
+    .card-link {
+      font-size: 11px;
+      font-weight: normal;
+      color: #1C7CD5;
+    }
+  }
